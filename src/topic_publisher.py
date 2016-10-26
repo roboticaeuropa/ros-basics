@@ -20,7 +20,7 @@ pub = rospy.Publisher('counter', Int32)
 # END PUB
 
 # BEGIN LOOP
-rate = rospy.Rate(2)
+rate = rospy.Rate(2) # If set to 1 Hz it will be a counter of seconds
 
 count = 0
 while not rospy.is_shutdown():
